@@ -1,6 +1,6 @@
 class ConvolutionalProcessingBlock_BN_RC(nn.Module):
     def __init__(self, input_shape, num_filters, kernel_size, padding, bias, dilation):
-        super(EnhancedConvolutionalProcessingBlock, self).__init__()
+        super(ConvolutionalProcessingBlock_BN_RC, self).__init__()
         # Initialize attributes
         self.num_filters = num_filters
         self.kernel_size = kernel_size
@@ -47,7 +47,7 @@ class ConvolutionalProcessingBlock_BN_RC(nn.Module):
         
 class ConvolutionalDimensionalityReductionBlock_BN_RC(nn.Module):
     def __init__(self, input_shape, num_filters, kernel_size, padding, bias, dilation, reduction_factor):
-        super(EnhancedConvolutionalDimensionalityReductionBlock, self).__init__()
+        super(ConvolutionalDimensionalityReductionBlock_BN_RC, self).__init__()
         # Initialize attributes
         self.num_filters = num_filters
         self.kernel_size = kernel_size
